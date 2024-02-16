@@ -1,0 +1,16 @@
+.Rating_wrapper{
+    display: inline-block;
+}
+.Rating_star {
+    position: relative;
+}
+
+.Rating_unstar {
+    display: flex;
+    gap: 4px;
+}
+
+.Rating_started {
+    position: absolute;
+    top: 0;
+}
