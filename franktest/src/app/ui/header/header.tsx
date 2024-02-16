@@ -6,13 +6,18 @@
  */
 import style from "@/app/ui/header/header.module.scss";
 import { Zap, ShoppingBag } from "lucide-react";
+import Link from "next/link";
 export default function Header() {
   return (
     <div className={style.Header_wrapper}>
-      <Zap className={style.Header_icon__zap} fill="#4F46E5" />
+      <Link href={"/"}>
+        <Zap className={style.Header_icon__zap} fill="#4F46E5" />
+      </Link>
       <div className={style.Header_car__wrapper}>
-        <ShoppingBag className={style.Header_icon__car} />
-        <a>x 4</a>
+        <Link href={"/product/cart"}>
+          <ShoppingBag className={style.Header_icon__car} />
+          <span className={style.Header_car__itemnumber}>x 4</span>
+        </Link>
       </div>
     </div>
   );
