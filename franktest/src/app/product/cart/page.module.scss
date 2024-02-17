@@ -1,0 +1,50 @@
+.Cart_container__mask{
+    width: 375px;
+    height: 635px;
+    background-color: hsl(0, 0%, 75%) ;
+    opacity: 75%;
+    position: absolute;
+    top: 85px;
+    
+
+}
+.Cart_wrapper{
+    width: 336px;
+    z-index: 2;
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    margin-top: 22px;
+    background-color: white;
+    box-shadow: 0px 1px 2px 0px #00000040;
+    border: 2px solid #EFF0F3;
+    border-radius: 10px;
+    
+}
+
+
+.Cart_header {
+    width: 315px;
+    height: 32px;
+    margin: auto;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-bottom: 1px solid #E5E7EB;
+    position: relative;
+
+    >span {
+        vertical-align: top;
+        font-size: 18px;
+    }
+
+}
+
+.Cart_close {
+    position: absolute;
+        right: 0;
+        cursor: pointer;
+}
+.Cart_button{
+    margin: 10px 0px 10px 10px
+}

@@ -1,0 +1,53 @@
+.Productcard_wrapper{
+    width: 375px;
+    height: 498px;
+    background-color: white;
+    
+}
+.Productcard_image__wrapper{
+    width: 335px;
+    height: 305px;
+    margin: auto;
+}
+
+.Productcard_image{
+    margin-top: 20px;
+    margin-left: 29px;
+    background-color: red;
+
+}
+.Productcard_description{
+    width: 325px;
+    margin-top: 20px;
+    margin-left: 19px;
+    font-size: 14px;
+    color: #707784;
+    height: 34px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.Productcard_priceNrating_wrapper{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 22px;
+    position: relative;
+    >p{
+        font-size: 18px;
+        font-weight: 500;
+
+    }
+    >div{
+        position: absolute;
+        display: inline-block;
+        left: 219px;
+
+    }
+}
+.Productcard_priceNrating_number{
+    color:#707784;
+    line-height: 17px;
+    margin-left: 6px;
+}
+.Productcard_addbtn{
+    margin-left: 19px;
+}

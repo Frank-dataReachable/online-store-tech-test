@@ -1,0 +1,59 @@
+.Cartlist_wrapper{
+    width: 315px;
+    height: 123px;
+    margin-top: 16px;
+    margin-left: 10px;
+    border-bottom: 1px solid #E5E7EB ;
+}
+.Cartlist_left{
+    width: 96px;
+    height: 88px;
+    border-radius: 10px;
+    border: 1px solid #EFF0F3;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+.Cartlist_right{
+    width: 210px;
+    display: inline-block;
+    vertical-align: top;
+    
+    >div{
+        margin-top: 20px;  
+        margin-left: 5px;
+    }
+}
+.Cartlist_right__icon{
+    vertical-align: bottom;
+}
+.Cartlist_title{
+    display: inline-block;
+    width: 150px;
+    height: 35px;
+    overflow: hidden;
+    color: #707784;
+    font-size: 14px;
+}
+.Cartlist_icon{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    text-align: right;
+}
+.Cartlist_price{
+    display: inline-block;
+    width: 65px;
+}
+.Cartlist_right__input{
+    border: 1px solid #D1D5DB;
+    padding: 3px;
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 0px #00000040;
+    width: 65px;
+    height: 30px;
+    margin-left: 70px;
+    padding: 0 24px;
+}

@@ -1,0 +1,21 @@
+.product_wrapper{
+    position: relative;
+}
+.product_list__wrapper {
+    width: 375px;
+    background-color: white;
+    height: 100%;
+    margin: auto;
+
+    >h3 {
+        font-size: 24px;
+        font-weight: 700;
+        padding-top: 20px;
+        padding-left: 19px;
+
+    }
+}
+.product_subpage__wrapper{
+    position: fixed;
+    top: 0;
+}
