@@ -18,18 +18,23 @@ export default function Confirmation() {
       <div className={style.Confirm_container__mask} />
       <div className={style.Confirm_wrapper}>
         <div className={style.Confirm_header}>
-          <span>Order Confirmation</span>
+          <span data-testid="headerTitle">Order Confirmation</span>
           <Link href="/product">
-            <XCircle color="#707784" className={style.Confirm_close} />
+            <XCircle
+              color="#707784"
+              className={style.Confirm_close}
+              data-testid="headerIcon"
+            />
           </Link>
         </div>
-        <p>Thank you for your order!</p>
+        <p data-testid="bodyContent">Thank you for your order!</p>
         <Link href={"/product"}>
           <Button
             w="315px"
             className={style.Confimr_button}
             btnType="confirm"
             content="Close"
+            data-testid="confirmButton"
           />
         </Link>
       </div>

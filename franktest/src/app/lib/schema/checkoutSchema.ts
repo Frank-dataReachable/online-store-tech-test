@@ -35,7 +35,7 @@ export const checkoutSchema = z.object({
   name: z.string().min(1, { message: "Please enter the card name" }),
   expiry: z.string().min(1, { message: "Please enter the expiry day" }),
   cvc: z.number({
-    required_error: "Card Number is required",
+    required_error: "cvc is required",
     invalid_type_error: "Please enter the valid CVC",
   }),
 });

@@ -11,7 +11,12 @@ import Link from "next/link";
 import Button from "@/app/ui/components/button/button";
 import getCartInfo, { CartInfo } from "@/app/lib/api/getCartInfor";
 import getSingleList, { SingleProduct } from "@/app/lib/api/getSingleProduct";
-import CheckoutForm from "@/app/ui/checkoutForm/checkoutForm";
+import dynamic from "next/dynamic";
+
+const CheckoutForm = dynamic(
+  () => import("@/app/ui/checkoutForm/checkoutForm")
+);
+
 /**
  * this funciton will get the total price of the product in the cart
  * @param {CartInfo} cartinfo the cart information

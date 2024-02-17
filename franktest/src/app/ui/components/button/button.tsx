@@ -33,10 +33,8 @@ export default function Button({
   content = "Button",
   type = "submit",
   className,
+  ...props
 }: ButtonProps) {
-  // this hook will active isloading when doing request
-  const { pending } = useFormStatus();
-
   /**
    * this function will select the button style
    * @param {sting} btnType the type of the button, primary, secondary or confirm
@@ -61,9 +59,9 @@ export default function Button({
       }}
       className={`${style.Button_common} ${className}`}
       type={type}
-      disabled={pending}
+      {...props}
     >
-      {pending ? "Loading..." : content}
+      {content}
     </button>
   );
 }

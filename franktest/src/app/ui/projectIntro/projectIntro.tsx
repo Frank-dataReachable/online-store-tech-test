@@ -64,15 +64,16 @@ export default function ProjectIntro() {
       </p>
       <p>
         6. at Checkout page, I write the form as a client component because it
-        need few interactions with user, here I am using Zod and react-hook-form
-        for form validation, I am using Zod to write the form schema at
-        app/li/schema/checkoutSchema.ts file, I am using rect-hook-form for
-        errormessage and validation. At the bottom it will calculate the total
-        price accroding to the cart item price and quantity. you can change de
-        default cart id at app/product/checkout/page.tsx getCartInfo(id)
-        function to see the different cart summary. Due to the there is no api
-        for form sumbit, so I am just writing a form with validtion and there is
-        no data can be submited.
+        need few interactions with user, so I import it as dynamic import, here
+        I am using Zod and react-hook-form for form validation, I am using Zod
+        to write the form schema at app/li/schema/checkoutSchema.ts file, I am
+        using rect-hook-form for errormessage and validation. At the bottom it
+        will calculate the total price accroding to the cart item price and
+        quantity. you can change de default cart id at
+        app/product/checkout/page.tsx getCartInfo(id) function to see the
+        different cart summary. Due to the there is no api for form sumbit, so I
+        am just writing a form with validtion and there is no data can be
+        submited.
       </p>
       <p>
         All done, that&apos;s all about this project, I want to do the page
