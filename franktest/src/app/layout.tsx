@@ -3,6 +3,7 @@ import Header from "@/app/ui/header/header";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import style from "@/app/layout.module.scss";
+import ProjectIntro from "@/app/ui/projectIntro/projectIntro";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,11 +27,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <main>
           <div className={style.Homepage_layout__left}>
-            <div className={style.Homepage_content__wrapper}>
-              <h3>Project introduction</h3>
-              <p>xxx</p>
-              <p>xxx</p>
-            </div>
+            <ProjectIntro />
           </div>
           <div className={style.Homepage_layout__right}>
             <div className={style.Homepage_layout__rightcontainer}>

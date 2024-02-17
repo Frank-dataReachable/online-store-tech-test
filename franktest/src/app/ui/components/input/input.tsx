@@ -24,12 +24,14 @@ export default function Input({
   h = "42px",
   name = "content",
   className,
+  ...props
 }: InputProps) {
   return (
     <input
       className={`${style.Input_common} ${className}`}
       style={{ width: w, height: h }}
       name={name}
+      {...props}
     />
   );
 }

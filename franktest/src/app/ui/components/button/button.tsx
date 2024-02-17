@@ -16,7 +16,6 @@ interface ButtonProps {
   content?: string;
   type?: "submit" | "reset" | "button" | undefined;
   className?: string;
-  click?: () => void;
 }
 /**
  * this function is the button component
@@ -26,7 +25,6 @@ interface ButtonProps {
  * @param {stirng} content content of the button, default 'Button'
  * @param {stirng} type type of the button,'submit','reset','button, default 'Button'
  * @param {stirng} className add extra class to the button
- * @param {function} click click event to this button
  */
 export default function Button({
   btnType = "primary",
@@ -35,7 +33,6 @@ export default function Button({
   content = "Button",
   type = "submit",
   className,
-  click,
 }: ButtonProps) {
   // this hook will active isloading when doing request
   const { pending } = useFormStatus();
@@ -50,7 +47,7 @@ export default function Button({
       return "#4F46E5";
     } else if (btnType === "secondary") {
       return "#16A34A";
-    } else if (btnType === "danger") {
+    } else if (btnType === "confirm") {
       return "#000000";
     }
   };
@@ -65,7 +62,6 @@ export default function Button({
       className={`${style.Button_common} ${className}`}
       type={type}
       disabled={pending}
-      onClick={click}
     >
       {pending ? "Loading..." : content}
     </button>

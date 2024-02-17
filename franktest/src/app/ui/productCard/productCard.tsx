@@ -70,6 +70,7 @@ export default function ProductCard({
           w="336px"
           content="Add to Cart"
           className={style.Productcard_addbtn}
+          type="submit"
         />
       </form>
     </div>

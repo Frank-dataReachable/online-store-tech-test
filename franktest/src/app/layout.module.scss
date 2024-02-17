@@ -7,19 +7,12 @@
     
 }
 
-.Homepage_content__wrapper{
-    position: absolute;
-    margin: auto;
-    
-    left: 25%;
-    >p{
-        margin-top: 15px;
-    }
-}
+
 .Homepage_layout__right{
     display: inline-block;
     width: 50%;
     height: 700px;
+    border-left: 1px dashed black;
     
 }
 .Homepage_layout__rightcontainer{

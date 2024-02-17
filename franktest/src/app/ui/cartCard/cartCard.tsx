@@ -6,16 +6,24 @@
  */
 
 import CartList from "@/app/ui/cartCard/cartList";
-import getCartInfo, { CartInfo } from "@/app/lib/api/getCartInfor";
+import { CartInfo } from "@/app/lib/api/getCartInfor";
+
+/**
+ * this is the cartCard interface
+ * @property {}
+ * @property {}
+ * @property {}
+ */
+interface CartCardProps {
+  cartInfo: CartInfo;
+}
 /**
  * this is the cart list component
  * @param {number} id the id of the product
  * @param {number} quantity the totaly quantity of the product
  * @returns {React.FC} a functional component for cart cart
  */
-export default async function CartCard() {
-  const cartInfo: CartInfo = await getCartInfo(2);
-  console.log(cartInfo);
+export default async function CartCard({ cartInfo }: CartCardProps) {
   return (
     <>
       {cartInfo.products.map((item) => {
