@@ -5,6 +5,10 @@
  * @lastModify  2024-02-16
  */
 
-export default async function Home() {
+/**
+ * this is the product page file
+ * @returns {React.FC} a functional component
+ */
+export default async function Product() {
   return <div></div>;
 }

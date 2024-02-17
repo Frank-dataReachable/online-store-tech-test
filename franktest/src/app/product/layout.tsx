@@ -6,14 +6,19 @@
  */
 import style from "@/app/product/page.module.scss";
 import ProductCard from "@/app/ui/productCard/productCard";
-import getProductList, { ProductList } from "@/app/lib/api/getProductList";
+import getProductList, { ProductListItem } from "@/app/lib/api/getProductList";
 
+/**
+ * this layout is the procution page layout
+ * @param {ReactNode} children the children of this layout
+ * @returns {React.FC} a functional component
+ */
 export default async function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const productList: ProductList[] = await getProductList();
+  const productList: ProductListItem[] = await getProductList();
   return (
     <div className={style.product_wrapper}>
       <div className={style.product_list__wrapper}>

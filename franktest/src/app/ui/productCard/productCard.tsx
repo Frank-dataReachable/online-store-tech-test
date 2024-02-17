@@ -10,7 +10,14 @@ import Image from "next/image";
 import Rating from "@/app/ui/components/rating/rating";
 import updateCart from "@/app/lib/api/updateCart";
 
-// this is the prdocut card component props
+/**
+ * Product cart component interface
+ * @property {string} imgSrc the image src of the product
+ * @property {string} description the detail descrption of the product
+ * @property {number} price the price of the product
+ * @property {number} rating the rate of the product
+ * @property {number} id the id of the product
+ */
 interface ProductCardProps {
   imgSrc?: string;
   description?: string;
@@ -24,6 +31,7 @@ interface ProductCardProps {
  * @param {string} description the description for the product
  * @param {number} price the price for the product
  * @param {number} rating the rate number for the product
+ * @returns {React.FC} a functional component
  */
 export default function ProductCard({
   imgSrc = "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
@@ -40,7 +48,6 @@ export default function ProductCard({
           alt="Picture of the product"
           width={335}
           height={305}
-          className=""
         />
       </div>
       <p className={style.Productcard_description}>{description}</p>

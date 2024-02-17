@@ -7,7 +7,11 @@
 import style from "@/app/ui/header/header.module.scss";
 import { Zap, ShoppingBag } from "lucide-react";
 import Link from "next/link";
-export default function Header() {
+/**
+ * this is the header componet
+ * @returns {React.FC} a functional component for header
+ */
+export default async function Header() {
   return (
     <div className={style.Header_wrapper}>
       <Link href={"/"}>

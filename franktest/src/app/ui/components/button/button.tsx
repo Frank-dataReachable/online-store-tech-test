@@ -16,13 +16,17 @@ interface ButtonProps {
   content?: string;
   type?: "submit" | "reset" | "button" | undefined;
   className?: string;
+  click?: () => void;
 }
 /**
  * this function is the button component
- * @param {string} type there are three type for button, 'primary' or 'secondary' or 'confirm', default is 'primary' type
+ * @param {string} btnType there are three kinds for button, 'primary' or 'secondary' or 'confirm', default is 'primary'
  * @param {string} w width of the button, default '80px'
  * @param {string} h height of the button, default '38px'
  * @param {stirng} content content of the button, default 'Button'
+ * @param {stirng} type type of the button,'submit','reset','button, default 'Button'
+ * @param {stirng} className add extra class to the button
+ * @param {function} click click event to this button
  */
 export default function Button({
   btnType = "primary",
@@ -31,6 +35,7 @@ export default function Button({
   content = "Button",
   type = "submit",
   className,
+  click,
 }: ButtonProps) {
   // this hook will active isloading when doing request
   const { pending } = useFormStatus();
@@ -60,6 +65,7 @@ export default function Button({
       className={`${style.Button_common} ${className}`}
       type={type}
       disabled={pending}
+      onClick={click}
     >
       {pending ? "Loading..." : content}
     </button>

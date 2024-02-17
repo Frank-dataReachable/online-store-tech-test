@@ -20,11 +20,14 @@
     right: 18px;
     text-align: center;
     line-height: 18px;
-    >a{
-        line-height: 18px;
-        font-size: 14px;
-        color: #9CA3AF;
-    }
+    cursor: pointer;
+   
+}
+.Header_car__itemnumber{
+    line-height: 18px;
+    font-size: 14px;
+    color: #9CA3AF;
+    text-decoration: none;
 }
 .Header_icon__car{
     width: 16px;
